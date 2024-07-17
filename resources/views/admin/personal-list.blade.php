@@ -40,6 +40,10 @@
                                 Sosyal Medya Yöneticisi
                             @elseif ($user->position == 'accounting')
                                 Muhasebe
+                            @elseif ($user->position == 'videoEditor')
+                                Video Editörü
+                            @elseif ($user->position == 'projectManager')
+                                Proje Yöneticisi
                             @elseif ($user->position == 'intern')
                                 Stajyer
                             @endif

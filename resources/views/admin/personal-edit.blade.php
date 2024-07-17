@@ -24,6 +24,8 @@
                         <option value="socialMediaManager" {{ $user->position == 'socialMediaManager' ? 'selected' : '' }}>
                             Sosyal Medya Yöneticisi</option>
                         <option value="accounting" {{ $user->position == 'accounting' ? 'selected' : '' }}>Muhasebe</option>
+                        <option value="videoEditor" {{ $user->position == 'videoEditor' ? 'selected' : '' }}>Video Editörü</option>
+                        <option value="projectManager" {{ $user->position == 'projectManager' ? 'selected' : '' }}>Proje Yöneticisi</option>
                         <option value="intern" {{ $user->position == 'intern' ? 'selected' : '' }}>Stajyer</option>
                     </select>
                 </div>
