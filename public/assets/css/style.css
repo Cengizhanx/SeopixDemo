@@ -1,0 +1,339 @@
+:root {
+    --poppins-font: "Poppins", sans-serif;
+    --primary-pink-color: #7d00ff;
+    --dark-pink-color: #3e037a86;
+}
+
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+body {
+    font-family: var(--poppins-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#sidebar > div {
+    height: 129vh;
+    background: linear-gradient(180deg, #7d00ff 25%, #0f041a 90%);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #0f041a00;
+    font-weight: 600;
+}
+.nav-pills .nav-link:hover {
+    background-color: var(--dark-pink-color);
+}
+.mobile-navbar {
+    background-color: var(--primary-pink-color);
+}
+.nav-link.active {
+    font-weight: 600;
+}
+.nav-link.active,
+.nav-link {
+    color: #fff !important;
+}
+.navbar-toggler {
+    color: #fff;
+    border: 2px solid #ffffff8d;
+}
+.title-text {
+    font-size: 26px;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-bg-type: rgb(135 41 141 / 6%);
+}
+.table-hover > tbody > tr:hover > * {
+    --bs-table-bg-state: rgb(135 41 141 / 15%);
+}
+.btn.btn-pink {
+    background-color: var(--primary-pink-color);
+    color: #fff !important;
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.btn.btn-small-pink {
+    padding: 4px 8px;
+    font-size: 16px;
+    border-radius: 12px;
+    background-color: #5d1aa3;
+    border: none;
+    color: #fff !important;
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.btn.btn-pink:active,
+.btn.btn-pink:focus,
+.btn.btn-pink:hover,
+.btn.btn-small-pink:active,
+.btn.btn-small-pink:focus,
+.btn.btn-small-pink:hover {
+    background-color: #3d106d !important;
+}
+.form-label {
+    font-size: 15px;
+}
+.form-control,
+.form-select {
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.form-group label {
+    position: absolute;
+    bottom: -1.5rem; /* Adjust as needed */
+    left: 0;
+    font-size: 0.875rem; /* Adjust as needed */
+    color: #6c757d; /* Adjust as needed */
+}
+.form-inline .form-control {
+    width: auto;
+}
+.card {
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 2px 6px 15px 0 rgba(69, 65, 78, 0.1);
+    -moz-box-shadow: 2px 6px 15px 0 rgba(69, 65, 78, 0.1);
+    box-shadow: 2px 6px 15px 0 rgba(69, 65, 78, 0.1);
+    border: 0;
+}
+.card-stats .card-body {
+    padding: 15px !important;
+}
+.card-stats .col-icon {
+    width: 65px;
+    height: 65px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+}
+.card-stats .icon-big.icon-primary {
+    background: #1572e8;
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.card-stats .icon-big.icon-success {
+    background: #31ce36;
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.card-stats .icon-big.icon-pink {
+    background: var(--primary-pink-color);
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.card-stats .icon-big.icon-yellow {
+    background: #e3ca23;
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.card-stats .icon-big.icon-red {
+    background: #e32323;
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.card-stats .icon-big.icon-orange {
+    background: #e37d23;
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.card-stats .icon-big.icon-aqua {
+    background: #23e3d0;
+    box-shadow: rgba(14, 44, 96, 0.25) 0 4px 8px -2px,
+        rgba(14, 44, 96, 0) 0 0 0 1px;
+}
+.card-stats .icon-big {
+    width: 100%;
+    height: 100%;
+    font-size: 2.2em;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #fff;
+}
+.card-stats .icon-big i {
+    font-size: 27px;
+}
+.card-category {
+    margin-top: 0px;
+    font-size: 16px;
+    color: #8d9498;
+    margin-bottom: 0;
+    word-break: normal;
+}
+.card-title {
+    margin: 0;
+    color: #2a2f5b;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+.career-list ul p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.career-list ul li {
+    letter-spacing: 0.3px;
+    color: #4a4a4a;
+}
+.career-list th > i {
+    font-size: 20px;
+    color: var(--primary-pink-color);
+}
+.table-list th > i {
+    font-size: 20px;
+    color: var(--primary-pink-color);
+}
+.table-list ul p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.table-list ul li {
+    letter-spacing: 0.3px;
+    color: #4a4a4a;
+}
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 10px;
+    font-size: 14px;
+}
+a {
+    color: #212529;
+    text-decoration: none;
+}
+a.fc-event:hover {
+    color: #fff;
+    background-color: #260c40;
+    border-color: #260c40;
+}
+a.fc-event {
+    background-color: white;
+    border-color: white;
+    color: var(--primary-pink-color);
+}
+.modal-body {
+    padding: 20px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+/* İsteğe bağlı olarak butonun stillendirilmesi */
+.btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-primary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+.form-check-input:checked {
+    background-color: var(--primary-pink-color) !important;
+    border-color: var(--primary-pink-color) !important;
+}
+/* Modal başlığı için stiller */
+.modal-title {
+    font-size: 1.25rem; /* Başlık font boyutu */
+    font-weight: bold; /* Kalın font ağırlığı */
+}
+
+/* Modal içeriği için stiller */
+.modal-body {
+    font-size: 1rem; /* İçerik font boyutu */
+}
+
+/* Etkinlik bilgileri için stiller */
+.modal-body p {
+    margin-bottom: 0.5rem; /* Paragraflar arası boşluk */
+}
+
+/* Etkinlik pozisyonları için stiller */
+#eventModalPositions {
+    list-style-type: none; /* Sırasız liste işaretini kaldır */
+    padding-left: 0; /* Sol boşluğu kaldır */
+}
+
+#eventModalPositions li {
+    margin-bottom: 0.3rem; /* Liste öğeleri arası boşluk */
+}
+
+/* Modal footer için stiller */
+.modal-footer {
+    justify-content: center; /* Butonu merkeze hizala */
+}
+
+/* Kapat butonu için stiller */
+.modal-footer .btn-secondary {
+    background-color: #6c757d; /* Buton arka plan rengi */
+    color: #fff; /* Buton metin rengi */
+    border-color: #6c757d; /* Buton kenarlık rengi */
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268; /* Buton üzerine gelindiğinde arka plan rengi */
+    border-color: #545b62; /* Buton üzerine gelindiğinde kenarlık rengi */
+}
+.fc-button {
+    background-color: var(--primary-pink-color) !important;
+    border-color: var(--primary-pink-color) !important;
+}
+.fc-button:hover {
+    background-color: #260c40 !important;
+    border-color: #260c40 !important;
+}
+.fc-event-main {
+    background-color: var(--primary-pink-color) !important;
+    border-color: var(--primary-pink-color) !important;
+}
+.fc-event-main:hover {
+    color: #fff !important;
+    background-color: #260c40 !important;
+    border-color: #260c40 !important;
+}
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: rgb(74 255 0 / 33%) !important;
+}
+.fc .fc-daygrid-day.fc-day-sat,
+.fc .fc-daygrid-day.fc-day-sun {
+    background-color: rgb(255 0 0 / 18%) !important;
+}
+#positionFilter {
+    width: 20%; /* Full width */
+    padding: 10px; /* Padding for better touch target */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+    transition: border-color 0.3s; /* Smooth transition for border */
+}
+
+#positionFilter:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow */
+}
+
+/* Optional: Style for the options */
+#positionFilter option {
+    padding: 10px; /* Padding for options */
+}
+.event-status-checkbox {
+    margin-right: 5px;
+}
+
